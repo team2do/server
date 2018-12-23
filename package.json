@@ -1,0 +1,45 @@
+{
+  "name": "teamtodo",
+  "version": "0.0.1",
+  "description": "To Do List for Team",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamtodo/server.git"
+  },
+  "homepage": "https://github.com/teamtodo/server",
+  "bugs": "https://github.com/teamtodo/server/issues",
+  "author": "Byeongguk Gong <byeonggukgong@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha -r @babel/register",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "build": "babel src -d dist",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "rimraf": "^2.6.2",
+    "supertest": "^3.3.0"
+  }
+}
