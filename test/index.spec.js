@@ -1,17 +1,20 @@
+import chai from 'chai';
 import request from 'supertest';
-import { expect } from 'chai';
 
-import app from '../src/index';
+import server from '../src/server';
+
+chai.should();
 
 describe('GET / ', () => {
   it('should respond with text message "Hello World!"', (done) => {
-    request(app)
+    request(server)
       .get('/')
       .expect(200)
       .end((err, res) => {
         if (err) return done(err);
 
-        expect(res.text).to.equal('Hello World!');
+        res.text.should.be.a('string');
+        res.text.should.equal('Hello World!');
 
         done();
       });
