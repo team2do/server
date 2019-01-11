@@ -17,7 +17,7 @@ describe('/users', () => {
         .end((err) => {
           if (err) return done(err);
 
-          done(err);
+          done();
         });
     });
 
@@ -30,7 +30,7 @@ describe('/users', () => {
         .end((err) => {
           if (err) return done(err);
 
-          done(err);
+          done();
         });
     });
   });

@@ -16,7 +16,7 @@ server.get('/', (req, res) => {
 });
 
 server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({ extended: false }));
+server.use(bodyParser.urlencoded({ extended: true }));
 server.use(router);
 
 server.listen(port, () => {
