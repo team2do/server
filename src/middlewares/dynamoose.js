@@ -10,4 +10,11 @@ dynamoose.AWS.config.update({
 
 dynamoose.local();
 
+dynamoose.setDefaults({
+  create: true,
+  update: false,
+  waitForActive: true,
+  waitForActiveTimeout: 180000
+});
+
 export default dynamoose;
