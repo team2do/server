@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.14.2
-      - image: circleci/dynamodb
+      - image: circleci/dynamodb:8u181-jre
     working_directory: ~/teamtodo/server
     steps:
       - checkout
