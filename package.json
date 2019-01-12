@@ -13,7 +13,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha -r @babel/register --recursive --exit",
+    "test": "nyc mocha -r @babel/register --recursive --exit",
+    "coverage": "nyc report -r text-lcov > coverage.lcov && codecov",
     "start": "nodemon src/server.js --exec babel-node",
     "serve": "node dist/server.js",
     "build": "babel src -d dist",
@@ -34,6 +35,7 @@
     "@babel/register": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "chai": "^4.2.0",
+    "codecov": "^3.1.0",
     "eslint": "^5.10.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
@@ -43,6 +45,7 @@
     "mocha": "^5.2.0",
     "nock": "^10.0.5",
     "nodemon": "^1.18.9",
+    "nyc": "^13.1.0",
     "rimraf": "^2.6.2",
     "supertest": "^3.3.0"
   }
