@@ -1,6 +1,5 @@
 import uuid from 'uuid';
-
-import dynamoose from '../middlewares/dynamoose';
+import dynamoose from 'dynamoose';
 
 const userSchema = new dynamoose.Schema({
   id: {
