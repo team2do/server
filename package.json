@@ -1,14 +1,14 @@
 {
-  "name": "teamtodo",
+  "name": "team2do",
   "version": "0.0.1",
   "description": "To Do List for Team",
   "main": "src/server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/teamtodo/server.git"
+    "url": "https://github.com/team2do/server.git"
   },
-  "homepage": "https://github.com/teamtodo/server",
-  "bugs": "https://github.com/teamtodo/server/issues",
+  "homepage": "https://github.com/team2do/server",
+  "bugs": "https://github.com/team2do/server/issues",
   "author": "Byeongguk Gong <byeonggukgong@gmail.com>",
   "license": "MIT",
   "scripts": {
